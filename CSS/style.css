@@ -1,0 +1,90 @@
+/* this is the CSS file that will style and design my website. it has been linked inside the php files so it can be executed in them. */
+
+html {
+    overflow-y: scroll; 
+}
+
+.parallax { 
+/* The image used */
+background-image: url("https://wtop.com/wp-content/uploads/2015/03/Music-QampA-Hans-Zimmer-1880x1250.jpeg");
+
+/* Set a specific height */
+height: 400px; 
+
+/* Create the parallax scrolling effect */
+background-attachment:fixed;
+background-position:center;
+background-repeat: no-repeat;
+background-size:cover;
+}
+
+/* adjust audio player width according to screen size */
+audio {
+    max-width:100%;
+}
+
+/* change title colour to dark grey, center it in page, make it bold, change font to sans-serif, change font size to 160px, add a shadow to text, and change the background div to colour dimgray. */
+#Title {
+    color: darkgrey;
+    text-align: center;
+    font-weight: bold;
+    font-family:sans-serif;
+    font-size: 160px;
+    text-shadow: 4px 4px black;
+    background-color:dimgray;
+}
+
+/* move search box to right and postion it center of navigation bar */
+form {
+    float:right;
+    padding:10px;
+}
+
+/* change paragraph text font to sans-serif, make font slightly bolder, and move text down page. */
+p {
+    font-family: sans-serif;
+    font-weight: 200;
+    padding-top: 20px;
+}
+
+/* target table header inside table tag to center text */
+table, th {
+    padding: 30px;
+    text-align: center;
+}
+
+/* align table data to center, change font colour black, make text slightly bolder, space out data between each other to not look cluttered. */
+td {
+    text-align: center;
+    color: black;
+    font-weight: 100px;
+    padding-bottom: 6px;
+    padding-top: 6px;
+    
+}
+
+/* change size of album cover to fit inside table */
+img{
+    height: 100px;
+    width: 100px;
+}
+
+/* change the background colour of whole website to white smoke. */
+body {
+    background-color: whitesmoke;
+}
+
+/* target all of table to put in a border underneath each data (2px solid grey), style the border to make it solid, and center the table to page depending on screen size. */
+table, th, td{
+    border-bottom: 2px solid grey;
+    border-bottom-style:solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase/decrease the pixels if needed */
+@media only screen and (max-device-width: 1024px) {
+    .parallax {
+        background-attachment: scroll;
+    }
+}
